@@ -1,10 +1,13 @@
 .App {
   font-family: Garamond;
   color: #333;
-  box-sizing: border-box;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+main {
+  flex: 1; /* Ensures the main content takes up available space */
+  display: flex;
+  flex-direction: column;
+}

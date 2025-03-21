@@ -7,6 +7,7 @@
   align-items: center;
 }
 
+
 .home-container img {
   width: 100%;
   height: 100%;
@@ -14,6 +15,55 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: -1; /* Ensure the image is behind other content */
+  /* Ensure the image is behind other content */
+  background: url('../assets/img/background-blue.png') no-repeat center center/cover;
   clip-path: inset(0%);
+}
+
+/* Ensure the parent list is horizontal */
+ul {
+  list-style: none;
+  display: flex; /* Makes items align horizontally */
+  justify-content: center; /* Centers the items */
+  gap: 20px; /* Spacing between items */
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for each collection card */
+.collections {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+/* Ensuring list items inside collections fit properly */
+.collections li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+/* Image styling inside collections */
+.collections img {
+  width: 100%; /* Make the image fit the container */
+  height: auto; /* Keep aspect ratio */
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.collections img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
 }
