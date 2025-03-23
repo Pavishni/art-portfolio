@@ -48,7 +48,7 @@
 /* Extra small devices (phones, up to 576px) */
 @media (max-width: 575px) {
   .header {
-    width: 92%;
+    width: auto;
   }
 }
 

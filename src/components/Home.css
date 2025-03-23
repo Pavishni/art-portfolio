@@ -5,36 +5,38 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
-
-.home-container img {
+/* Background Image */
+.home-container-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
-  /* Ensure the image is behind other content */
-  background: url('../assets/img/background-blue.png') no-repeat center center/cover;
+  z-index: -1;
+  background: url('../assets/img/background.webp') no-repeat center center/cover;
   clip-path: inset(0%);
 }
 
-/* Ensure the parent list is horizontal */
-ul {
+/* Collection List (Initially Horizontal) */
+.home-nav {
   list-style: none;
-  display: flex; /* Makes items align horizontally */
-  justify-content: center; /* Centers the items */
-  gap: 20px; /* Spacing between items */
+  display: flex; /* Aligns items horizontally */
+  justify-content: center;
+  gap: 20px; /* Space between items */
   padding: 0;
   margin: 0;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
-/* Styling for each collection card */
+/* Collection Card */
 .collections {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,7 +48,7 @@ ul {
   z-index: 2;
 }
 
-/* Ensuring list items inside collections fit properly */
+/* List Item inside Collection */
 .collections li {
   width: 100%;
   height: 100%;
@@ -56,14 +58,57 @@ ul {
   z-index: 3;
 }
 
-/* Image styling inside collections */
+/* Image Styling */
 .collections img {
-  width: 100%; /* Make the image fit the container */
-  height: auto; /* Keep aspect ratio */
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  object-fit: cover;
 }
 
 .collections img:hover {
-  transform: scale(1.05); /* Slight zoom on hover */
+  transform: scale(1.05); /* Zoom on hover */
 }
+
+/* Collection Text */
+.collections p {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: rgb(250, 231, 231);
+  text-align: start;
+  padding: 15px;
+  font-size: 1.5rem;
+  font-style: italic;
+  left: 0%;
+}
+
+/* 🌟 Fix for Shrinking Issue */
+@media (max-width: 768px) {
+  .home-container {
+    width: 100vw; /* Ensure full width */
+    height: auto; /* Allow it to expand naturally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Add some padding to avoid tight spacing */
+  }
+
+  .collections {
+    width: 90%; /* Make it responsive but not too small */
+    max-width: 300px; /* Prevent it from stretching too much */
+    height: auto; /* Allow dynamic height */
+  }
+
+  .collections img {
+    width: 100%; /* Ensure it fills the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .home-nav {
+    gap: 15px; /* Reduce spacing to fit better */
+  }
+}
+
