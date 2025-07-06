@@ -1,15 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex">
-      <p>Pavishni Arts</p>
-      <div className="font-garamond">
-        <p>Home</p>
-        <p>About</p>
-        <p>Contact</p>
-        <p style={{ fontFamily: "EB Garamond, serif" }}>
-          Inline style test — is this Garamond?
+    <div className="flex font-['EB_Garamond'] justify-between shadow-lg my-5 ">
+      <p className="text-3xl p-3">
+        <Link to="/">P a v i s h n i A r t s</Link>
+      </p>
+      <div className="flex p-5 text-xl">
+        <p className="px-2">
+          <Link to="/">Home</Link>
+        </p>
+        <p className="px-2">
+          <Link to="/about">About</Link>
+        </p>
+        <p className="px-2">
+          <Link to="/contact">Contact</Link>
         </p>
       </div>
     </div>
