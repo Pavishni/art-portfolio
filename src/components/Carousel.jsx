@@ -1,6 +1,10 @@
+import boy from '../assets/images/boy.jpg'
+
 const Carousel = () => {
   return (
-    <div>Carousel</div>
+    <div>
+      <img src={boy} />
+    </div>
   )
 }
 
