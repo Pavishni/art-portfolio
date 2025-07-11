@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex font-['EB_Garamond'] justify-between shadow-lg my-5 ">
+    <div className="flex font-['EB_Garamond'] justify-between shadow-lg mt-5 ">
       <p className="text-3xl p-3">
         <Link to="/">P a v i s h n i A r t s</Link>
       </p>
