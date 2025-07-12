@@ -7,7 +7,7 @@ const FloatingCandlesBackground = () => {
     }));
   };
 
-  const candles = generateCandles(180)
+  const candles = generateCandles(200)
   return (
     <div className="flex-1 bg-[#0a0f2c] relative h-screen overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full">

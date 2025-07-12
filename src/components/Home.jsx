@@ -11,7 +11,7 @@ const Home = () => {
       </div>
 
       {/* Parchment Image */}
-      <div className="relative z-10 w-8/12 flex justify-center">
+      <div className="relative z-10 w-9/12 flex justify-center">
         <img src={parchment} alt="Parchment" className="max-w-full h-auto" />
       </div>
     </div>
