@@ -4,14 +4,12 @@ import parchment from "../assets/images/parchment.png";
 
 const Home = () => {
   return (
-    <div className="relative overflow-hidden min-h-screen flex items-center justify-center">
-      {/* Background Candles */}
-      <div className="absolute inset-0 z-0 h-[150vh]">
+    <div className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20">
+      <div className="absolute inset-0 z-0 h-[300vh]">
         <FloatingCandlesBackground />
       </div>
 
-      {/* Parchment Image */}
-      <div className="relative z-10 w-9/12 flex justify-center">
+      <div className="relative z-10 w-9/12 flex justify-center fade-in opacity-0">
         <img src={parchment} alt="Parchment" className="max-w-full h-auto" />
       </div>
     </div>

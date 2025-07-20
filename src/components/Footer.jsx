@@ -1,30 +1,41 @@
 import { FaEnvelope, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="justify-center flex m-10">
-      <p className="px-5 scale-150 hover:scale-200 transform duration-200">
-        <Link to="https://www.instagram.com/pavishni_arts/#">
+    <footer className="bg-[#bfa76f] text-[#2a1c00] py-6 shadow-inner">
+      <div className="flex justify-center items-center gap-8 text-2xl">
+        <a
+          href="https://www.instagram.com/pavishni_arts/#"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-125 transition-transform duration-200"
+        >
           <FaInstagram />
-        </Link>
-      </p>
-      <p className="px-5 scale-150 hover:scale-200 transform duration-200">
-        <Link to="https://www.youtube.com/@pavishni_arts">
+        </a>
+        <a
+          href="https://www.youtube.com/@pavishni_arts"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-125 transition-transform duration-200"
+        >
           <FaYoutube />
-        </Link>
-      </p>
-      <p className="px-5 scale-150 hover:scale-200 transform duration-200">
-        <Link to="https://www.linkedin.com/in/pavishni-r/">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pavishni-r/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:scale-125 transition-transform duration-200"
+        >
           <FaLinkedin />
-        </Link>
-      </p>
-      <p className="px-5 scale-150 hover:scale-200 transform duration-200">
-        <Link to="mailto:pavishniarts@gmail.com">
+        </a>
+        <a
+          href="mailto:pavishniarts@gmail.com"
+          className="hover:scale-125 transition-transform duration-200"
+        >
           <FaEnvelope />
-        </Link>
-      </p>
-    </div>
+        </a>
+      </div>
+    </footer>
   );
 };
 

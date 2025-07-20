@@ -1,21 +1,39 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [showHeader, setShowHeader] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const controlHeader = () => {
+      if (window.scrollY > lastScrollY) {
+        setShowHeader(false); // scroll down -> hide
+      } else {
+        setShowHeader(true); // scroll up -> show
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", controlHeader);
+    return () => window.removeEventListener("scroll", controlHeader);
+  }, [lastScrollY]);
+
   return (
-    <div className="flex  justify-between shadow-lg bg-black text-gray-300">
-      <p className="text-3xl m-5">
-        <Link to="/">P a v i s h n i A r t s</Link>
-      </p>
-      <div className="flex p-5 text-xl">
-        <p className="px-2 mt-1">
-          <Link to="/">Home</Link>
+    <div
+      className={`fixed top-0 left-0 w-full z-50 bg-[#bfa76f] text-[#2a1c00] shadow-md font-serif px-6 py-4 transition-transform duration-500 ${
+        showHeader ? "translate-y-0" : "-translate-y-full"
+      }`}
+    >
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <p className="text-3xl tracking-wide">
+          <Link to="/">P a v i s h n i A r t s</Link>
         </p>
-        <p className="px-2 mt-1">
-          <Link to="/about">About</Link>
-        </p>
-        <p className="px-2 mt-1">
-          <Link to="/contact">Contact</Link>
-        </p>
+        <div className="flex gap-6 text-lg">
+          <Link to="/" className="hover:underline">Home</Link>
+          <Link to="/about" className="hover:underline">About</Link>
+          <Link to="/contact" className="hover:underline">Contact</Link>
+        </div>
       </div>
     </div>
   );

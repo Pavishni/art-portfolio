@@ -14,6 +14,15 @@
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .candle-float {
   animation: float 4s ease-in-out infinite;
 }
@@ -25,3 +34,6 @@
   width: 24px;
   height: 64px;
 }
+.fade-in {
+      animation: fadeIn 1s ease-in-out forwards;
+    }
