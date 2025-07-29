@@ -3,9 +3,11 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Home from './components/Home.jsx';
 import About from './components/About.jsx';
 import Contact from './components/Contact.jsx';
+import CategoryDetails from './components/CategoryDetails.jsx';
 
 
 
@@ -16,7 +18,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />,
+        element: <Home />, 
       },
       {
         path: "/about",
@@ -34,8 +36,17 @@ const appRouter = createBrowserRouter([
           </Suspense>
         ),
       },
+      // Category details route
+      {
+        path: "/category/:categoryId",
+        element: (
+          <Suspense fallback={<h1>Loading....</h1>}>
+            <CategoryDetails />
+          </Suspense>
+        ),
+      },
     ],
-    errorElement: <Error />,
+    errorElement: <Error />, 
   },
 ]);
 

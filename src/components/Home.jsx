@@ -1,16 +1,12 @@
 import Carousel from "./Carousel";
-import FloatingCandlesBackground from "./FloatingCandlesBackground";
-import parchment from "../assets/images/parchment.png";
 
 const Home = () => {
   return (
-    <div className="relative overflow-hidden min-h-screen flex items-center justify-center pt-20">
-      <div className="absolute inset-0 z-0 h-[300vh]">
-        <FloatingCandlesBackground />
-      </div>
-
-      <div className="relative z-10 w-9/12 flex justify-center fade-in opacity-0">
-        <img src={parchment} alt="Parchment" className="max-w-full h-auto" />
+    <div className="min-h-screen flex flex-col bg-[#2a1c00] pt-20">
+      <div className="w-full max-w-[1000px] mx-auto">
+        <div className="fade-in mt-4">
+          <Carousel />
+        </div>
       </div>
     </div>
   );
