@@ -28,9 +28,9 @@ const Carousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-[#2a1c00]">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#1E1400]">
       {/* Carousel container */}
-      <div className="w-full max-w-full md:max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-[#2a1c00] flex items-center justify-center overflow-hidden shadow-lg rounded-2xl mt-10 px-0 sm:px-2">
+      <div className="w-full max-w-full md:max-w-[1000px] h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] bg-[#1E1400] flex items-center justify-center overflow-hidden shadow-lg rounded-2xl mt-10 px-0 sm:px-2">
         <img
           src={images[index]}
           alt={`Slide ${index + 1}`}
@@ -51,7 +51,7 @@ const Carousel = () => {
             />
             <div
               className={`w-4 h-4 rounded-full cursor-pointer transition-colors duration-300 ${
-                index === i ? "bg-[#bfa76f]" : "bg-gray-400"
+                index === i ? "bg-[#E0C385]" : "bg-gray-400"
               }`}
             ></div>
           </label>

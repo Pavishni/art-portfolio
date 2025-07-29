@@ -2,7 +2,7 @@ import { FaEnvelope, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#bfa76f] text-[#2a1c00] py-6 shadow-inner">
+    <footer className="bg-[#E0C385] text-[#1E1400] py-6 shadow-inner">
       <div className="flex justify-center items-center gap-12 text-2xl">
         <a
           href="https://www.instagram.com/pavishni_arts/#"
