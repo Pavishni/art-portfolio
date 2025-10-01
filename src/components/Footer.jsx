@@ -1,42 +1,9 @@
-import { FaEnvelope, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#E0C385] text-[#1E1400] py-6 shadow-inner">
-      <div className="flex justify-center items-center gap-12 text-2xl">
-        <a
-          href="https://www.instagram.com/pavishni_arts/#"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-125 transition-transform duration-200"
-        >
-          <FaInstagram />
-        </a>
-        <a
-          href="https://www.youtube.com/@pavishni_arts"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-125 transition-transform duration-200"
-        >
-          <FaYoutube />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/pavishni-r/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:scale-125 transition-transform duration-200"
-        >
-          <FaLinkedin />
-        </a>
-        <a
-          href="mailto:pavishniarts@gmail.com"
-          className="hover:scale-125 transition-transform duration-200"
-        >
-          <FaEnvelope />
-        </a>
-      </div>
-    </footer>
-  );
-};
+    <div>Footer</div>
+  )
+}
 
-export default Footer;
+export default Footer

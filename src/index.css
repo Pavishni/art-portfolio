@@ -1,39 +1,17 @@
 @import "tailwindcss";
-@keyframes float {
-  0% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-  50% {
-    transform: translateY(-20px);
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
+
+@font-face {
+    font-family: 'Space Grotesk';
+    src: url('./assets/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.space-grotesk {
+    font-family: 'Space Grotesk', sans-serif;
 }
 
-.candle-float {
-  animation: float 4s ease-in-out infinite;
+header ul li {
+    @apply p-3 backdrop-blur-2xl text-[14px] font-bold text-[#5d6d7e] hover:text-[#2C3E50] hover:cursor-pointer hover:underline hover:decoration-[#f5d7e3] hover:underline-offset-8;
 }
-
-.candle {
-  background-image: url("assets/images/candleImg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 64px;
-}
-.fade-in {
-      animation: fadeIn 1s ease-in-out forwards;
-    }

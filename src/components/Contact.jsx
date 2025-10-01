@@ -1,7 +1,11 @@
+import Header from "./Header";
+
 const Contact = () => {
   return (
-    <div className='flex-1'>Contact</div>
-  )
-}
+    <div className="">
+      <Header />
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

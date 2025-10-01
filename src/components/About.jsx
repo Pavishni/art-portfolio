@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Header from "./Header";
 
 const About = () => {
   return (
-    <div className='flex-1'>About</div>
-  )
-}
+    <div className="">
+      <Header />
+    </div>
+  );
+};
 
-export default About
+export default About;

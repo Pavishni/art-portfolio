@@ -1,15 +1,15 @@
-import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-
+import Home from "./components/Home.jsx";
+import About from "./components/About.jsx";
+import Contact from "./components/Contact.jsx";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    <div className="min-h-screen flex flex-col font-['EB_Garamond']">
-      <Header />
-      <Outlet />
-      <Footer />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
   );
 };
 
