@@ -5,7 +5,7 @@ import { useState } from "react";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
   return (
-    <header className="space-grotesk flex justify-between px-2 md:px-36 shadow-xl bg-[#F8F9FA] py-2.5">
+    <header className="fk-grotesk-neue flex justify-between px-2 md:px-36 shadow-lg bg-[#F8F9FA] py-2.5">
       <div className="font-bold text-center text-[#f5d7e3]">
         <Link to="/">
           P A V I S H N I<br />

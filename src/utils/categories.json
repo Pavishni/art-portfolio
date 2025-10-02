@@ -1,0 +1,24 @@
+{
+  "categories": [
+    {
+      "catId": "colorPencils",
+      "name": "Color Pencils"
+    },
+    {
+      "catId": "oilPainting",
+      "name": "Oil Painting"
+    },
+    {
+      "catId": "acrylicPainting",
+      "name": "Acrylic Painting"
+    },
+    {
+      "catId": "charcoal",
+      "name": "Charcoal"
+    },
+    {
+      "catId": "digitalArt",
+      "name": "Digital Art"
+    }
+  ]
+}
