@@ -3,6 +3,7 @@ import Header from "./Header";
 import Navigation from "./Navigation"
 import Banner from "./Banner";
 import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Navigation />
       <Banner />
       <Carousel />
+      <Footer />
     </div>
   );
 };

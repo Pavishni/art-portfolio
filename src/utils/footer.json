@@ -1,0 +1,24 @@
+{
+  "footers": [
+    {
+      "heading": "Quick Links",
+      "items": [
+        { "label": "Home", "url": "/" },
+        { "label": "About", "url": "/about" },
+        { "label": "Contact", "url": "/contact" }
+      ]
+    },
+    {
+      "heading": "Contact",
+      "items": [{ "label": "Email", "url": "mailto:pavishniarts@gmail.com" }]
+    },
+    {
+      "heading": "Follow Me",
+      "items": [
+        { "label": "Instagram", "url": "https://instagram.com/pavishni_arts" },
+        { "label": "YouTube", "url": "https://www.youtube.com/@pavishni_arts" }
+      ]
+    }
+  ],
+  "copyright": "© 2024 Artist's Gallery. All rights reserved."
+}

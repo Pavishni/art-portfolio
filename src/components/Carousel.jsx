@@ -1,5 +1,5 @@
 const Carousel = () => {
-  return <div className="rounded-xl"> </div>;
+  return <div className="rounded-xl">Carousel</div>;
 };
 
 export default Carousel;
