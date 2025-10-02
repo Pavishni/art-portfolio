@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Bars3Icon } from "@heroicons/react/16/solid";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/16/solid";
 import { useState } from "react";
 
 const Header = () => {
@@ -12,22 +12,28 @@ const Header = () => {
           ARTS
         </Link>
       </div>
-      <div className="hidden md:block">
-        <ul className="flex">
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
+      <div className="flex flex-col md:flex-row pt-2.5">
+        <button className="md:hidden left-0 pl-20" onClick={() => setToggle(!toggle)}>
+          {!toggle ? (
+            <Bars3Icon className="text-black h-5 block" />
+          ) : (
+            <XMarkIcon className="text-black h-5 block left-0" />
+          )}
+        </button>
+        <div className={`${toggle ? "block" : "hidden"} md:block`}>
+          <ul className="flex flex-col md:flex-row">
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/about">About</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <button onClick={() => setToggle(!toggle)}>
-        <Bars3Icon className="md:hidden text-black h-5" />
-      </button>
     </header>
   );
 };

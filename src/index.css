@@ -13,5 +13,5 @@
 }
 
 header ul li {
-    @apply p-3 backdrop-blur-2xl text-[14px] font-bold text-[#5d6d7e] hover:text-[#2C3E50] hover:cursor-pointer hover:underline hover:decoration-[#f5d7e3] hover:underline-offset-8;
+    @apply p-3 text-[14px] font-bold text-[#5d6d7e] hover:text-[#2C3E50] hover:cursor-pointer hover:underline hover:decoration-[#f5d7e3] hover:underline-offset-8;
 }
