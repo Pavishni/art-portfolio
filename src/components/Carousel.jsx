@@ -1,9 +1,5 @@
-import React from 'react'
-
 const Carousel = () => {
-  return (
-    <div>Carousel</div>
-  )
-}
+  return <div className="rounded-xl"> </div>;
+};
 
-export default Carousel
+export default Carousel;

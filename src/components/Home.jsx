@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Navigation from "./Navigation"
 import Banner from "./Banner";
+import Carousel from "./Carousel";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Header />
       <Navigation />
       <Banner />
+      <Carousel />
     </div>
   );
 };
