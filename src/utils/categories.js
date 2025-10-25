@@ -1,32 +1,32 @@
-import img1 from "../assets/images/image-5.jpg";
-import img2 from "../assets/images/image-6.jpg";
-import img3 from "../assets/images/image-7.jpg";
-import img4 from "../assets/images/image-8.jpg";
-import img5 from "../assets/images/image-1.jpg";
+import img5 from "../assets/images/image-5.jpg";
+import img6 from "../assets/images/image-6.jpg";
+import img7 from "../assets/images/image-7.jpg";
+import img8 from "../assets/images/image-8.jpg";
+import img9 from "../assets/images/image-1.jpg";
 
 export const categories = [
   {
     catId: "colorPencils",
     name: "Color Pencil Drawings",
-    image: img1,
+    image: img5,
   },
   {
     catId: "oilPainting",
     name: "Oil Paintings",
-    image: img2,
+    image: img6,
   },
   {
     catId: "charcoal",
     name: "Charcoal Sketches",
-    image: img3,
+    image: img7,
   },
   { catId: "digitalArt", 
     name: "Digital Art", 
-    image: img4 
+    image: img8,
   },
   {
     catId: "graphite",
     name: "Graphite Sketches",
-    image: img5,
+    image: img9,
   },
 ];
