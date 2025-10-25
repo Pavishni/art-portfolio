@@ -4,6 +4,7 @@ import Navigation from "./Navigation"
 import Banner from "./Banner";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
+import NavigationMobile from "./NavigationMobile";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Navigation />
       <Banner />
       <Carousel />
+      <NavigationMobile />
       <Footer />
     </div>
   );

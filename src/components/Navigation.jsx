@@ -1,9 +1,8 @@
 import React from "react";
-import categoriesData from "../utils/categories.json";
+import {categories} from "../utils/categories.js";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {
-  const { categories } = categoriesData;
   return (
     <nav className="hidden md:block md:mt-5 bg-[#F8F9FA] fixed top-16 w-full z-50">
       <ul className="flex mx-36">

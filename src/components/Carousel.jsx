@@ -12,7 +12,7 @@ const Carousel = () => {
   const prevSlide = () => {
     setIndex(index === 0 ? artworks.length - 1 : index - 1);
   };
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => prev === artworks.length - 1 ? 0 : prev + 1);
@@ -21,8 +21,8 @@ const Carousel = () => {
   }, [artworks.length]);
 
   return (
-    <div className="relative w-full max-w-xl mx-auto ">
-      <div className="aspect-[4/3] items-center flex justify-center bg-gray-200 overflow-hidden">
+    <div className="relative w-full max-w-xl mx-auto my-6">
+      <div className="aspect-[4/3] items-center flex justify-center bg-gray-200 overflow-hidden rounded-2xl">
         <img
           src={artworks[index]?.image}
           alt={artworks[index]?.title}
@@ -31,13 +31,13 @@ const Carousel = () => {
       </div>
       <div className="flex justify-between">
         <button
-          className="absolute left-3 top-1/2 bg-gray-400/40 hover:bg-gray-400/70 rounded-full opacity-100"
+          className="absolute left-3 top-1/2 bg-gray-200 hover:bg-gray-400/70 rounded-full opacity-100 cursor-pointer"
           onClick={prevSlide}
         >
           <FiChevronLeft size={24} />
         </button>
         <button
-          className="absolute right-3 top-1/2 bg-gray-400/40 hover:bg-gray-400/70 rounded-full opacity-100"
+          className="absolute right-3 top-1/2 bg-gray-200 hover:bg-gray-400/70 rounded-full opacity-100 cursor-pointer"
           onClick={nextSlide}
         >
           <FiChevronRight size={24} />
@@ -48,7 +48,7 @@ const Carousel = () => {
           <button
             key={i}
             onClick={() => setIndex(i)}
-            className={`w-2.5 h-2.5 rounded-full transition-all ${
+            className={`w-2.5 h-2.5 rounded-full transition-all cursor-pointer ${
               index === i ? "bg-gray-800 w-8" : "bg-gray-400  hover:bg-gray-600"
             }`}
           />

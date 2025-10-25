@@ -6,26 +6,22 @@ import img4 from "../assets/images/image-4.JPG";
 export const artworks = [
   {
     id: 1,
-    title: "Abstract Dreams",
-    desc: "A mix of warm tones with surreal geometry.",
+    title: "Graphite pencil Drawing",
     image: img1,
   },
   {
     id: 2,
-    title: "Ocean Haze",
-    desc: "Reflective gradients inspired by nature.",
+    title: "Color pencil drawing",
     image: img2,
   },
   {
     id: 3,
-    title: "Crimson Glow",
-    desc: "Soft brushwork with deep reds and contrast.",
+    title: "Soft pastels",
     image: img3,
   },
   {
     id: 4,
-    title: "Crimson Glow",
-    desc: "Soft brushwork with deep reds and contrast.",
+    title: "Color pencil - Tiger",
     image: img4,
   },
 ];
